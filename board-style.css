@@ -82,8 +82,4 @@ li {
     transform: translateY(4px);
     opacity: 0.5;
   }
-  .gameButton:disabled {
-    background: #999;
-    color: #555;
-    cursor: not-allowed;
-  }
+  
