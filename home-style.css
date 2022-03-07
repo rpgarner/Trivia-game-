@@ -1,0 +1,38 @@
+body {
+    background-color: teal;
+}
+header {
+    text-align: center;
+}
+.navBar {
+    list-style: none;
+    background-color: rgb(1, 77, 64);
+    padding: 10px;
+    text-align: center;
+}
+.play {
+    color: black;
+}
+li {
+    display: inline-block;
+    padding: 0 100px;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+.introduction {
+    text-align: center;
+    
+}
+.intro {
+    border-bottom: 2px solid black;
+}
+.howTO {
+    background-color: rgba(159, 206, 206, 0.356);
+}
+.how{
+   margin: 30px 90px;
+   padding: 5px;
+   border-bottom: 2px solid black;
+  
+} 

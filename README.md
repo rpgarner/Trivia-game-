@@ -1,5 +1,5 @@
 # Trivia-game-
-For my project I will be building a jeopardy like trivia game. It will have a home page where you are prompt to select a subject that will load the categories and have time to put the teams together. 
+Trivia game is a fun game of trivial questions by category. with multiple topics there is a series of questions. Each questions is associated with the amount of points a question is worth. Answer the question correctly and be reward with the points. The more points a questions is worth the harder the question is.  
 
 
 ## Rules
