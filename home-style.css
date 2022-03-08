@@ -1,22 +1,23 @@
 body {
-    background-color: teal;
+    background-color: rgb(10, 34, 78);
+    color: white;
 }
 header {
     text-align: center;
 }
 .navBar {
     list-style: none;
-    background-color: rgb(1, 77, 64);
+    background-color: rgb(27, 80, 179);
     padding: 10px;
     text-align: center;
 }
 .howToButton {
-    background-color:rgb(1, 77, 64) ;
+    background-color:rgb(27, 80, 179) ;
     color: white;
     font-size: x-large;
 }
 .play {
-    color: black;
+    color: white;
 }
 li {
     display: inline-block;
@@ -30,7 +31,7 @@ li {
     
 }
 .intro {
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid white;
 }
 .howTO {
     background-color: rgba(159, 206, 206, 0.356);
@@ -38,6 +39,6 @@ li {
 .how{
    margin: 30px 90px;
    padding: 5px;
-   border-bottom: 2px solid black;
+   border-bottom: 1px solid white;
   
 } 
