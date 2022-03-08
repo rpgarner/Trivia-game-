@@ -1,5 +1,5 @@
 # Trivia-game-
-Trivia game is a fun game of trivial questions by category. with multiple topics there is a series of questions. Each questions is associated with the amount of points a question is worth. Answer the question correctly and be reward with the points. The more points a questions is worth the harder the question is.  
+Trivia game is a fun game of trivial questions. With multiple categories having 5 sections, each section with 5 questions. Each questions is associated with the amount of points a question is worth. Answer the question correctly and be reward with the points. The more points a questions is worth the harder the question is. There is a total of $7,500 points possible, test your knowledge on these topics and see how high of score you can get.  
 
 
 ## Rules
