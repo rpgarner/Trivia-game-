@@ -4,8 +4,10 @@ let subB = document.querySelector('.category2')
 let subC = document.querySelector('.category3')
 let subD = document.querySelector('.category4')
 let subE = document.querySelector('.category5')
-let sports = [football,baseball,sportHistory,olympics,losers]
+let categoryButton = document.querySelector('.barButton')
+
 // subjects and questions
+let sports = [football,baseball,sportHistory,olympics,losers]
 let football = [{
     'question1': 'banana', 
     'correctAnswer': 'Apple',
@@ -23,7 +25,7 @@ let football = [{
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
-    'question15': 'banana', 
+    'question5': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 }]
@@ -44,7 +46,7 @@ let baseball = [{
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
-    'question15': 'banana', 
+    'question5': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 }]
@@ -65,7 +67,7 @@ let sportHistory = [{
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
-    'question15': 'banana', 
+    'question5': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 }]
@@ -86,7 +88,7 @@ let olympics = [{
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
-    'question15': 'banana', 
+    'question5': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 }]
@@ -107,9 +109,10 @@ let losers = [{
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
-    'question15': 'banana', 
+    'question5': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 }]
 
 //click events
+
