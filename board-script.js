@@ -5,6 +5,7 @@ let subC = document.querySelector('.category3')
 let subD = document.querySelector('.category4')
 let subE = document.querySelector('.category5')
 let categoryButton = document.querySelector('.barButton')
+let questionSelect = document.querySelector('.gameButton')
 
 // subjects and questions
 let sports = [football,baseball,sportHistory,olympics,losers]
