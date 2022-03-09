@@ -1,4 +1,4 @@
-console.log('test')
+//query selects
 let subA = document.querySelector('.category1')
 let subB = document.querySelector('.category2')
 let subC = document.querySelector('.category3')
@@ -6,16 +6,42 @@ let subD = document.querySelector('.category4')
 let subE = document.querySelector('.category5')
 let categoryButton = document.querySelector('.categoryButton')
 let questionSelect = document.querySelector('.gameButton')
-let a1 = document.querySelector('.a-1')
-let a2 = document.querySelector('.a-2')
-let a3 = document.querySelector('.a-3')
-let a4 = document.querySelector('.a-4')
-let a5 = document.querySelector('.a-5')
+    // first column buttons
+    let a1 = document.querySelector('.a-1')
+    let a2 = document.querySelector('.a-2')
+    let a3 = document.querySelector('.a-3')
+    let a4 = document.querySelector('.a-4')
+    let a5 = document.querySelector('.a-5')
+    //second column buttons
+    let b1 = document.querySelector('.b-1')
+    let b2 = document.querySelector('.b-2')
+    let b3 = document.querySelector('.b-3')
+    let b4 = document.querySelector('.b-4')
+    let b5 = document.querySelector('.b-5')
+    //third column buttons 
+    let c1 = document.querySelector('.c-1')
+    let c2 = document.querySelector('.c-2')
+    let c3 = document.querySelector('.c-3')
+    let c4 = document.querySelector('.c-4')
+    let c5 = document.querySelector('.c-5')
+    //fourth column buttons
+    let d1 = document.querySelector('.d-1')
+    let d2 = document.querySelector('.d-2')
+    let d3 = document.querySelector('.d-3')
+    let d4 = document.querySelector('.d-4')
+    let d5 = document.querySelector('.d-5') 
+    //fifth column buttons
+    let e1 = document.querySelector('.e-1')
+    let e2 = document.querySelector('.e-2')
+    let e3 = document.querySelector('.e-3')
+    let e4 = document.querySelector('.e-4')
+    let e5 = document.querySelector('.e-5')
+// universal variables
 let scoreBoard = document.querySelector('.score')
 let score = 0
 let answerPrompt = 'Enter in either a,b,c,or d. options are:'
 // subjects and questions
-let sports = ['football','baseball','history','olympics','losers']
+let sports = ['football','baseball','history','olympics','almost']
 let history = ['american','computer science', 'culture', 'who', 'when']
 let music = ["1990's",'rock n roll', 'ancient', 'nursery rymes', 'randon']
 let movies = ['action','musicals', 'history', 'banana', 'egg']
@@ -46,85 +72,105 @@ let football = [{
     'answers': [' a: Pittsburgh Steelers', ' b: Greenbay Packers',' c: Chicago Bears',' d: Arizona Cardinals']
 }]
 let baseball = [{
+    'points': 100, 
     'question1': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 200, 
     'question2': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 300, 
     'question3': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 400, 
     'question4': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 500, 
     'question5': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 }]
 let sportHistory = [{
+    'points': 100, 
     'question1': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 200, 
     'question2': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 300, 
     'question3': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 400, 
     'question4': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 500, 
     'question5': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 }]
 let olympics = [{
+    'points': 100, 
     'question1': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 200, 
     'question2': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 300, 
     'question3': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 400, 
     'question4': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 500, 
     'question5': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 }]
-let losers = [{
+let almost = [{
+    'points': 100, 
     'question1': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 200, 
     'question2': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 300, 
     'question3': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 400, 
     'question4': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
 },{
+    'points': 500, 
     'question5': 'banana', 
     'correctAnswer': 'Apple',
     'answers': ['Apple', 'b','c','d']
@@ -141,6 +187,10 @@ let losers = [{
         subD.innerHTML = sports[3]
         subE.innerHTML = sports[4]
         sportsFootball()
+        sportsBaseball()
+        sportsHistory()
+        sportsOlympics()
+        sportsAlmost()
      }
     else if ('history') {
         subA.innerHTML = history[0]
@@ -167,6 +217,7 @@ let losers = [{
 
 
 
+//function for cat sports, subject football
 
 sportsFootball = () => {
     let subject = football
@@ -215,6 +266,202 @@ sportsFootball = () => {
             }  
     })
 }
+//  function for cat sports, subject baseball
+sportsBaseball = () => {
+    let subject = baseball
+    b1.addEventListener('click', () => {
+        let Q1 = prompt(`${subject[0].question} 
+        ${answerPrompt} 
+        ${subject[0].answers}`)
+        if (Q1 === `${subject[0].correctAnswer}`) {
+            correctAnswer(subject[0].points)
+        }else {}  
+    })
+    b2.addEventListener('click', () => {
+       let Q2 = prompt(`${subject[1].question} 
+        ${answerPrompt} 
+        ${subject[1].answers}`)
+        if (Q2 === `${subject[1].correctAnswer}`) {
+            correctAnswer(subject[1].points)
+        }else {  
+            }  
+    })
+    b3.addEventListener('click', () => {
+       let Q3 = prompt(`${subject[2].question} 
+        ${answerPrompt} 
+        ${subject[2].answers}`)
+        if (Q3 === `${subject[2].correctAnswer}`) {
+            correctAnswer(subject[2].points)
+        }else {  
+            }  
+    })
+    b4.addEventListener('click', () => {
+        let Q4 = prompt(`${subject[3].question} 
+        ${answerPrompt} 
+        ${subject[3].answers}`)
+        if (Q4 === `${subject[3].correctAnswer}`) {
+            correctAnswer(subject[3].points)
+        }else {  
+            }  
+    })
+    b5.addEventListener('click', () => {
+        let Q5 = prompt(`${subject[4].question} 
+        ${answerPrompt} 
+        ${subject[4].answers}`)
+        if (Q5 === `${subject[4].correctAnswer}`) {
+            correctAnswer(subject[4].points)
+        }else {  
+            }  
+    })
+}
+
+// function for cat sports, subject sport history 
+sportsHistory = () => {
+    let subject = sportHistory
+    c1.addEventListener('click', () => {
+        let Q1 = prompt(`${subject[0].question} 
+        ${answerPrompt} 
+        ${subject[0].answers}`)
+        if (Q1 === `${subject[0].correctAnswer}`) {
+            correctAnswer(subject[0].points)
+        }else {}  
+    })
+    c2.addEventListener('click', () => {
+       let Q2 = prompt(`${subject[1].question} 
+        ${answerPrompt} 
+        ${subject[1].answers}`)
+        if (Q2 === `${subject[1].correctAnswer}`) {
+            correctAnswer(subject[1].points)
+        }else {  
+            }  
+    })
+    c3.addEventListener('click', () => {
+       let Q3 = prompt(`${subject[2].question} 
+        ${answerPrompt} 
+        ${subject[2].answers}`)
+        if (Q3 === `${subject[2].correctAnswer}`) {
+            correctAnswer(subject[2].points)
+        }else {  
+            }  
+    })
+    c4.addEventListener('click', () => {
+        let Q4 = prompt(`${subject[3].question} 
+        ${answerPrompt} 
+        ${subject[3].answers}`)
+        if (Q4 === `${subject[3].correctAnswer}`) {
+            correctAnswer(subject[3].points)
+        }else {  
+            }  
+    })
+    c5.addEventListener('click', () => {
+        let Q5 = prompt(`${subject[4].question} 
+        ${answerPrompt} 
+        ${subject[4].answers}`)
+        if (Q5 === `${subject[4].correctAnswer}`) {
+            correctAnswer(subject[4].points)
+        }else {  
+            }  
+    })
+}
+
+//  functions for cat sports, subject olympics
+sportsOlympics = () => {
+    let subject = olympics
+    d1.addEventListener('click', () => {
+        let Q1 = prompt(`${subject[0].question} 
+        ${answerPrompt} 
+        ${subject[0].answers}`)
+        if (Q1 === `${subject[0].correctAnswer}`) {
+            correctAnswer(subject[0].points)
+        }else {}  
+    })
+    d2.addEventListener('click', () => {
+       let Q2 = prompt(`${subject[1].question} 
+        ${answerPrompt} 
+        ${subject[1].answers}`)
+        if (Q2 === `${subject[1].correctAnswer}`) {
+            correctAnswer(subject[1].points)
+        }else {  
+            }  
+    })
+    d3.addEventListener('click', () => {
+       let Q3 = prompt(`${subject[2].question} 
+        ${answerPrompt} 
+        ${subject[2].answers}`)
+        if (Q3 === `${subject[2].correctAnswer}`) {
+            correctAnswer(subject[2].points)
+        }else {  
+            }  
+    })
+    d4.addEventListener('click', () => {
+        let Q4 = prompt(`${subject[3].question} 
+        ${answerPrompt} 
+        ${subject[3].answers}`)
+        if (Q4 === `${subject[3].correctAnswer}`) {
+            correctAnswer(subject[3].points)
+        }else {  
+            }  
+    })
+    d5.addEventListener('click', () => {
+        let Q5 = prompt(`${subject[4].question} 
+        ${answerPrompt} 
+        ${subject[4].answers}`)
+        if (Q5 === `${subject[4].correctAnswer}`) {
+            correctAnswer(subject[4].points)
+        }else {  
+            }  
+    })
+}
+
+//function for cat sports, subject almost
+sportsAlmost = () => {
+    let subject = almost
+    e1.addEventListener('click', () => {
+        let Q1 = prompt(`${subject[0].question} 
+        ${answerPrompt} 
+        ${subject[0].answers}`)
+        if (Q1 === `${subject[0].correctAnswer}`) {
+            correctAnswer(subject[0].points)
+        }else {}  
+    })
+    e2.addEventListener('click', () => {
+       let Q2 = prompt(`${subject[1].question} 
+        ${answerPrompt} 
+        ${subject[1].answers}`)
+        if (Q2 === `${subject[1].correctAnswer}`) {
+            correctAnswer(subject[1].points)
+        }else {  
+            }  
+    })
+    e3.addEventListener('click', () => {
+       let Q3 = prompt(`${subject[2].question} 
+        ${answerPrompt} 
+        ${subject[2].answers}`)
+        if (Q3 === `${subject[2].correctAnswer}`) {
+            correctAnswer(subject[2].points)
+        }else {  
+            }  
+    })
+    e4.addEventListener('click', () => {
+        let Q4 = prompt(`${subject[3].question} 
+        ${answerPrompt} 
+        ${subject[3].answers}`)
+        if (Q4 === `${subject[3].correctAnswer}`) {
+            correctAnswer(subject[3].points)
+        }else {  
+            }  
+    })
+    e5.addEventListener('click', () => {
+        let Q5 = prompt(`${subject[4].question} 
+        ${answerPrompt} 
+        ${subject[4].answers}`)
+        if (Q5 === `${subject[4].correctAnswer}`) {
+            correctAnswer(subject[4].points)
+        }else {  
+            }  
+    })
+}
+// function to change score board
  correctAnswer = (x) => {
     score = score + x;
     scoreBoard.innerHTML = score
@@ -235,3 +482,134 @@ sportsFootball = () => {
 //     score = score + 500
 //     scoreBoard.innerHTML = score
 // }
+
+// let football = [{
+//     'points': 100, 
+//     'question': 'In the NFL, the championship game is called what?', 
+//     'correctAnswer': 'c',
+//     'answers': [' a: world cup',' b: NFL championship',' c: super bowl',' d: rose bowl']
+// },{
+//     'points': 200, 
+//     'question': 'Payton Manning missed all of the 2011 season, due to an injury to what body part?', 
+//     'correctAnswer': 'a',
+//     'answers': [' a: neck', ' b: knee',' c: foot',' d: back']
+// },{
+//     'points': 300, 
+//     'question': 'what NFL team went to 4 superbowls in a row, but did not win a single one', 
+//     'correctAnswer': 'b',
+//     'answers': [' a: Dallas Cowboys', ' b: Buffalo Bills',' c: San Francisco',' d: Washington Redskins']
+// },{
+//     'points': 400, 
+//     'question': 'The triple crown is awarded to a player who had the most yards, touchdowns, receptions. Who was the last player to be reward the Triple crown?', 
+//     'correctAnswer': 'b',
+//     'answers': ['a: Randy Moss', 'b: Cooper Kupp','c: Jerry Rice','d: Antonio Brown']
+// },{
+//     'points': 500, 
+//     'question': 'What team was established in 1898 and was the first team to join the NFL?', 
+//     'correctAnswer': 'd',
+//     'answers': [' a: Pittsburgh Steelers', ' b: Greenbay Packers',' c: Chicago Bears',' d: Arizona Cardinals']
+// }]
+// let baseball = [{
+//     'points': 100, 
+//     'question1': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 200, 
+//     'question2': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 300, 
+//     'question3': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 400, 
+//     'question4': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 500, 
+//     'question5': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// }]
+// let sportHistory = [{
+//     'points': 100, 
+//     'question1': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 200, 
+//     'question2': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 300, 
+//     'question3': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 400, 
+//     'question4': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 500, 
+//     'question5': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// }]
+// let olympics = [{
+//     'points': 100, 
+//     'question1': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 200, 
+//     'question2': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 300, 
+//     'question3': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 400, 
+//     'question4': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 500, 
+//     'question5': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// }]
+// let losers = [{
+//     'points': 100, 
+//     'question1': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 200, 
+//     'question2': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 300, 
+//     'question3': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 400, 
+//     'question4': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// },{
+//     'points': 500, 
+//     'question5': 'banana', 
+//     'correctAnswer': 'Apple',
+//     'answers': ['Apple', 'b','c','d']
+// }]
