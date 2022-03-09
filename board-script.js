@@ -57,9 +57,9 @@ let football = [{
     'answers': [' a: neck', ' b: knee',' c: foot',' d: back']
 },{
     'points': 300, 
-    'question': 'what NFL team went to 4 superbowls in a row, but did not win a single one', 
+    'question': 'The New Your Jets original team name was what ', 
     'correctAnswer': 'b',
-    'answers': [' a: Dallas Cowboys', ' b: Buffalo Bills',' c: San Francisco',' d: Washington Redskins']
+    'answers': [' a: Pioneers', ' b: Titans',' c: Iron boys',' d: Colts']
 },{
     'points': 400, 
     'question': 'The triple crown is awarded to a player who had the most yards, touchdowns, receptions. Who was the last player to be reward the Triple crown?', 
@@ -99,81 +99,81 @@ let baseball = [{
 }]
 let sportHistory = [{
     'points': 100, 
-    'question1': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question1': 'Which sport was the only sport played on the Moon', 
+    'correctAnswer': 'b',
+    'answers': [' a: soccer', ' b: Golf',' c: football',' d: baseball']
 },{
     'points': 200, 
-    'question2': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question2': 'How old was Tiger Woods when he won his first Masters', 
+    'correctAnswer': 'a',
+    'answers': [' a: 21', ' b: 19',' c: 23','d: 33']
 },{
     'points': 300, 
-    'question3': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question3': 'There has been how many tour de Frances have there been?', 
+    'correctAnswer': 'd',
+    'answers': [' a: 72', ' b: 87',' c: 132 ',' d: 108']
 },{
     'points': 400, 
-    'question4': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question4': 'Micheal Jordan and the Chicago went on a incredible championship run, how many did they win ', 
+    'correctAnswer': 'c',
+    'answers': ['a: 3', ' b: 4 ',' c: 6 ',' d: 9']
 },{
     'points': 500, 
-    'question5': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question5': 'In 2021 who was the highest paid athlete', 
+    'correctAnswer': 'd',
+    'answers': [' a: Lebron James', ' b: Patrick Mahomes',' c: Christiano Ronaldo',' d: Connor Mcgregor']
 }]
 let olympics = [{
     'points': 100, 
-    'question1': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question1': 'Which athlete won 8 gold medals in the 2008 summer olymipics?', 
+    'correctAnswer': 'b',
+    'answers': ['a: Usain Bolt', ' b: Michael Phelps',' c: Allyson Felix',' d: Katie Ledecky']
 },{
     'points': 200, 
-    'question2': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question2': 'In what olyimpic year was snowboarding added as a sport?', 
+    'correctAnswer': 'b',
+    'answers': [' a: 2000', ' b: 1998','c: 1990','d: 2003']
 },{
     'points': 300, 
-    'question3': 'banana', 
+    'question3': '', 
     'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'answers': ['A', 'b','c','d']
 },{
     'points': 400, 
-    'question4': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question4': 'What country that competed, went through the longest drought of winning a gold medal?', 
+    'correctAnswer': 'c',
+    'answers': [' a: Greece', ' b: South Africa',' c: Philippines',' d: ']
 },{
     'points': 500, 
-    'question5': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question5': ' When were the first Olympic games?', 
+    'correctAnswer': 'a',
+    'answers': [' a: 776 B.C.', ' b: 263 A.D.',' c: 1192 A.D.',' d: 124 B.c. ']
 }]
 let almost = [{
     'points': 100, 
-    'question1': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question1': 'In track and feild what achievement was considered impossible to beat but after 1954 has been broken over 1,000 times?', 
+    'correctAnswer': 'a',
+    'answers': [' a: 4 minute mile', ' b: 6 meter pull volt ',' c: 100 meter javelin',' d: 2 hour marathon']
 },{
     'points': 200, 
-    'question2': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question2': 'What NFL team almost beat the undefeated season record but lost their last game', 
+    'correctAnswer': 'c',
+    'answers': [' a: Miami Dolphins ', ' b: Dallas Cowboys',' c: New England Patriots',' d: San Francisco 49ers ']
 },{
     'points': 300, 
-    'question3': 'banana', 
+    'question3': 'what NFL team went to 4 superbowls in a row, but did not win a single one', 
     'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'answers': [' a: Dallas Cowboys', ' b: Buffalo Bills',' c: San Francisco',' d: Washington Redskins']
 },{
     'points': 400, 
-    'question4': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question4': 'What college footbal team had the worst losing record at 34 straight games?', 
+    'correctAnswer': 'd',
+    'answers': [' a: North Illinois', ' b: UCLA',' c: mississippi state',' d. northwestern']
 },{
     'points': 500, 
-    'question5': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question5': ' ', 
+    'correctAnswer': 'd',
+    'answers': ['a', 'b','c','d']
 }]
 
 //click events
