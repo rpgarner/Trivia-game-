@@ -541,6 +541,11 @@ sportsAlmost = () => {
  correctAnswer = (x) => {
     score = score + x;
     scoreBoard.innerHTML = score
+    if (score >= 5000) {
+        alert('You Win! you are one smart cookie.')
+    } else if (score === 7500) {
+        alert('you are a trivia master')
+    }
 }
 disableButton = (y) => {
     y.style.background = 'green'
@@ -552,6 +557,7 @@ incorrect = (z) => {
     z.style.opacity = 0.5
     z.disabled = 'true'
 }
+
 // correctAnswer200 = () => {
 //     score = score + 200
 //     scoreBoard.innerHTML = score
