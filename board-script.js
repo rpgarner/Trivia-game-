@@ -39,7 +39,7 @@ let questionSelect = document.querySelector('.gameButton')
 // universal variables
 let scoreBoard = document.querySelector('.score')
 let score = 0
-let answerPrompt = 'Enter in either a,b,c,or d. options are:'
+let answerPrompt = 'Enter in either a,b,c,or d:'
 // subjects and questions
 let sports = ['football','baseball','history','olympics','almost']
 let history = ['american','computer science', 'culture', 'who', 'when']
@@ -73,105 +73,105 @@ let football = [{
 }]
 let baseball = [{
     'points': 100, 
-    'question1': 'How many teams are in the MLB', 
+    'question': 'How many teams are in the MLB', 
     'correctAnswer': 'c',
     'answers': [' a: 24', ' b: 36',' c: 30',' d: 28']
 },{
     'points': 200, 
-    'question2': 'Who won the World Series in 2021', 
+    'question': 'Who won the World Series in 2021', 
     'correctAnswer': 'a',
     'answers': [' a: Atlanta Braves', ' b: Los Angelas Dodgers',' c: Boston Red Socks',' d: Houston Astros']
 },{
     'points': 300, 
-    'question3': 'How many Games are in a MLB season?', 
+    'question': 'How many Games are in a MLB season?', 
     'correctAnswer': 'b',
     'answers': [' a: 92', ' b: 162',' c: 100',' d: 142']
 },{
     'points': 400, 
-    'question4': 'Barry Bonds has the record for the most Home Runs in a season, how many did he hit?', 
+    'question': 'Barry Bonds has the record for the most Home Runs in a season, how many did he hit?', 
     'correctAnswer': 'b',
     'answers': [' a: 66', ' b: 73',' c: 71',' d: 78']
 },{
     'points': 500, 
-    'question5': 'In baseball what is another name for a walk? ', 
+    'question': 'In baseball what is another name for a walk? ', 
     'correctAnswer': 'b',
     'answers': [' a: walk it out', ' b: base on balls',' c: take your base',' d: all balls']
 }]
 let sportHistory = [{
     'points': 100, 
-    'question1': 'Which sport was the only sport played on the Moon', 
+    'question': 'Which sport was the only sport played on the Moon', 
     'correctAnswer': 'b',
     'answers': [' a: soccer', ' b: Golf',' c: football',' d: baseball']
 },{
     'points': 200, 
-    'question2': 'How old was Tiger Woods when he won his first Masters', 
+    'question': 'How old was Tiger Woods when he won his first Masters', 
     'correctAnswer': 'a',
     'answers': [' a: 21', ' b: 19',' c: 23','d: 33']
 },{
     'points': 300, 
-    'question3': 'There has been how many tour de Frances have there been?', 
+    'question': 'There has been how many tour de Frances?', 
     'correctAnswer': 'd',
     'answers': [' a: 72', ' b: 87',' c: 132 ',' d: 108']
 },{
     'points': 400, 
-    'question4': 'Micheal Jordan and the Chicago went on a incredible championship run, how many did they win ', 
+    'question': 'Micheal Jordan and the Chicago went on a incredible championship run, how many did they win ', 
     'correctAnswer': 'c',
     'answers': ['a: 3', ' b: 4 ',' c: 6 ',' d: 9']
 },{
     'points': 500, 
-    'question5': 'In 2021 who was the highest paid athlete', 
+    'question': 'In 2021 who was the highest paid athlete', 
     'correctAnswer': 'd',
     'answers': [' a: Lebron James', ' b: Patrick Mahomes',' c: Christiano Ronaldo',' d: Connor Mcgregor']
 }]
 let olympics = [{
     'points': 100, 
-    'question1': 'Which athlete won 8 gold medals in the 2008 summer olymipics?', 
+    'question': 'Which athlete won 8 gold medals in the 2008 summer olymipics?', 
     'correctAnswer': 'b',
     'answers': ['a: Usain Bolt', ' b: Michael Phelps',' c: Allyson Felix',' d: Katie Ledecky']
 },{
     'points': 200, 
-    'question2': 'In what olyimpic year was snowboarding added as a sport?', 
+    'question': 'In what olyimpic year was snowboarding added as a sport?', 
     'correctAnswer': 'b',
     'answers': [' a: 2000', ' b: 1998','c: 1990','d: 2003']
 },{
     'points': 300, 
-    'question3': '', 
+    'question': '', 
     'correctAnswer': 'Apple',
     'answers': ['A', 'b','c','d']
 },{
     'points': 400, 
-    'question4': 'What country that competed, went through the longest drought of winning a gold medal?', 
+    'question': 'What country that competed, went through the longest drought of winning a gold medal?', 
     'correctAnswer': 'c',
-    'answers': [' a: Greece', ' b: South Africa',' c: Philippines',' d: ']
+    'answers': [' a: Greece', ' b: South Africa',' c: Philippines',' d: hungary']
 },{
     'points': 500, 
-    'question5': ' When were the first Olympic games?', 
+    'question': ' When were the first Olympic games?', 
     'correctAnswer': 'a',
     'answers': [' a: 776 B.C.', ' b: 263 A.D.',' c: 1192 A.D.',' d: 124 B.c. ']
 }]
 let almost = [{
     'points': 100, 
-    'question1': 'In track and feild what achievement was considered impossible to beat but after 1954 has been broken over 1,000 times?', 
+    'question': 'In track and feild what achievement was considered impossible to beat but after 1954 has been broken over 1,000 times?', 
     'correctAnswer': 'a',
     'answers': [' a: 4 minute mile', ' b: 6 meter pull volt ',' c: 100 meter javelin',' d: 2 hour marathon']
 },{
     'points': 200, 
-    'question2': 'What NFL team almost beat the undefeated season record but lost their last game', 
+    'question': 'What NFL team almost beat the undefeated season record but lost their last game', 
     'correctAnswer': 'c',
     'answers': [' a: Miami Dolphins ', ' b: Dallas Cowboys',' c: New England Patriots',' d: San Francisco 49ers ']
 },{
     'points': 300, 
-    'question3': 'what NFL team went to 4 superbowls in a row, but did not win a single one', 
-    'correctAnswer': 'Apple',
+    'question': 'what NFL team went to 4 superbowls in a row, but did not win a single one', 
+    'correctAnswer': 'b',
     'answers': [' a: Dallas Cowboys', ' b: Buffalo Bills',' c: San Francisco',' d: Washington Redskins']
 },{
     'points': 400, 
-    'question4': 'What college footbal team had the worst losing record at 34 straight games?', 
+    'question': 'What college footbal team had the worst losing record at 34 straight games?', 
     'correctAnswer': 'd',
     'answers': [' a: North Illinois', ' b: UCLA',' c: mississippi state',' d. northwestern']
 },{
     'points': 500, 
-    'question5': ' ', 
+    'question': ' ', 
     'correctAnswer': 'd',
     'answers': ['a', 'b','c','d']
 }]
@@ -227,7 +227,12 @@ sportsFootball = () => {
         ${subject[0].answers}`)
         if (Q1 === `${subject[0].correctAnswer}`) {
             correctAnswer(subject[0].points)
-        }else {}  
+            disableButton(a1)
+        } else if (Q1 != `${subject[0].correctAnswer}`) {
+            incorrect(a1)
+        } else {
+            
+        }  
     })
     a2.addEventListener('click', () => {
        let Q2 = prompt(`${subject[1].question} 
@@ -235,8 +240,10 @@ sportsFootball = () => {
         ${subject[1].answers}`)
         if (Q2 === `${subject[1].correctAnswer}`) {
             correctAnswer(subject[1].points)
-        }else {  
-            }  
+            disableButton(a2)
+        } else if (Q2 != `${subject[1].correctAnswer}`) {
+            incorrect(a2)
+        } else {}  
     })
     a3.addEventListener('click', () => {
        let Q3 = prompt(`${subject[2].question} 
@@ -244,7 +251,10 @@ sportsFootball = () => {
         ${subject[2].answers}`)
         if (Q3 === `${subject[2].correctAnswer}`) {
             correctAnswer(subject[2].points)
-        }else {  
+            disableButton(a3)
+        } else if (Q3 != `${subject[2].correctAnswer}`) {
+            incorrect(a3)
+        } else {  
             }  
     })
     a4.addEventListener('click', () => {
@@ -253,7 +263,10 @@ sportsFootball = () => {
         ${subject[3].answers}`)
         if (Q4 === `${subject[3].correctAnswer}`) {
             correctAnswer(subject[3].points)
-        }else {  
+            disableButton(a4)
+        } else if (Q4 != `${subject[3].correctAnswer}`) {
+            incorrect(a4)
+        } else {  
             }  
     })
     a5.addEventListener('click', () => {
@@ -262,7 +275,10 @@ sportsFootball = () => {
         ${subject[4].answers}`)
         if (Q5 === `${subject[4].correctAnswer}`) {
             correctAnswer(subject[4].points)
-        }else {  
+            disableButton(a5)
+        } else if (Q5 != `${subject[4].correctAnswer}`) {
+            incorrect(a5)
+        } else {  
             }  
     })
 }
@@ -275,7 +291,10 @@ sportsBaseball = () => {
         ${subject[0].answers}`)
         if (Q1 === `${subject[0].correctAnswer}`) {
             correctAnswer(subject[0].points)
-        }else {}  
+            disableButton(b1)
+        } else if (Q1 != `${subject[0].correctAnswer}`) {
+            incorrect(b1)
+        } else {}  
     })
     b2.addEventListener('click', () => {
        let Q2 = prompt(`${subject[1].question} 
@@ -283,7 +302,10 @@ sportsBaseball = () => {
         ${subject[1].answers}`)
         if (Q2 === `${subject[1].correctAnswer}`) {
             correctAnswer(subject[1].points)
-        }else {  
+            disableButton(b2)
+        } else if (Q2 != `${subject[1].correctAnswer}`) {
+            incorrect(b2)
+        } else {  
             }  
     })
     b3.addEventListener('click', () => {
@@ -292,7 +314,10 @@ sportsBaseball = () => {
         ${subject[2].answers}`)
         if (Q3 === `${subject[2].correctAnswer}`) {
             correctAnswer(subject[2].points)
-        }else {  
+            disableButton(b3)
+        } else if (Q3 != `${subject[2].correctAnswer}`) {
+            incorrect(b3)
+        } else {  
             }  
     })
     b4.addEventListener('click', () => {
@@ -301,7 +326,10 @@ sportsBaseball = () => {
         ${subject[3].answers}`)
         if (Q4 === `${subject[3].correctAnswer}`) {
             correctAnswer(subject[3].points)
-        }else {  
+            disableButton(b4)
+        } else if (Q4 != `${subject[3].correctAnswer}`) {
+            incorrect(b4)
+        } else {  
             }  
     })
     b5.addEventListener('click', () => {
@@ -310,7 +338,10 @@ sportsBaseball = () => {
         ${subject[4].answers}`)
         if (Q5 === `${subject[4].correctAnswer}`) {
             correctAnswer(subject[4].points)
-        }else {  
+            disableButton(b5)
+        } else if (Q5 != `${subject[4].correctAnswer}`) {
+            incorrect(b5)
+        } else {  
             }  
     })
 }
@@ -324,7 +355,10 @@ sportsHistory = () => {
         ${subject[0].answers}`)
         if (Q1 === `${subject[0].correctAnswer}`) {
             correctAnswer(subject[0].points)
-        }else {}  
+            disableButton(c1)
+        } else if (Q1 != `${subject[0].correctAnswer}`) {
+            incorrect(c1)
+        } else {}  
     })
     c2.addEventListener('click', () => {
        let Q2 = prompt(`${subject[1].question} 
@@ -332,7 +366,10 @@ sportsHistory = () => {
         ${subject[1].answers}`)
         if (Q2 === `${subject[1].correctAnswer}`) {
             correctAnswer(subject[1].points)
-        }else {  
+            disableButton(c2)
+        } else if (Q2 != `${subject[1].correctAnswer}`) {
+            incorrect(c2)
+        } else {  
             }  
     })
     c3.addEventListener('click', () => {
@@ -341,7 +378,10 @@ sportsHistory = () => {
         ${subject[2].answers}`)
         if (Q3 === `${subject[2].correctAnswer}`) {
             correctAnswer(subject[2].points)
-        }else {  
+            disableButton(c3)
+        } else if (Q3 != `${subject[2].correctAnswer}`) {
+            incorrect(c3)
+        } else {  
             }  
     })
     c4.addEventListener('click', () => {
@@ -350,7 +390,10 @@ sportsHistory = () => {
         ${subject[3].answers}`)
         if (Q4 === `${subject[3].correctAnswer}`) {
             correctAnswer(subject[3].points)
-        }else {  
+            disableButton(c4)
+        } else if (Q4 != `${subject[3].correctAnswer}`) {
+            incorrect(a4)
+        } else {  
             }  
     })
     c5.addEventListener('click', () => {
@@ -359,7 +402,10 @@ sportsHistory = () => {
         ${subject[4].answers}`)
         if (Q5 === `${subject[4].correctAnswer}`) {
             correctAnswer(subject[4].points)
-        }else {  
+            disableButton(c5)
+        } else if (Q5 != `${subject[4].correctAnswer}`) {
+            incorrect(c5)
+        } else {  
             }  
     })
 }
@@ -373,7 +419,10 @@ sportsOlympics = () => {
         ${subject[0].answers}`)
         if (Q1 === `${subject[0].correctAnswer}`) {
             correctAnswer(subject[0].points)
-        }else {}  
+            disableButton(d1)
+        } else if (Q1 != `${subject[0].correctAnswer}`) {
+            incorrect(d1)
+        } else {}  
     })
     d2.addEventListener('click', () => {
        let Q2 = prompt(`${subject[1].question} 
@@ -381,7 +430,10 @@ sportsOlympics = () => {
         ${subject[1].answers}`)
         if (Q2 === `${subject[1].correctAnswer}`) {
             correctAnswer(subject[1].points)
-        }else {  
+            disableButton(d2)
+        } else if (Q2 != `${subject[1].correctAnswer}`) {
+            incorrect(d2)
+        } else {  
             }  
     })
     d3.addEventListener('click', () => {
@@ -390,7 +442,10 @@ sportsOlympics = () => {
         ${subject[2].answers}`)
         if (Q3 === `${subject[2].correctAnswer}`) {
             correctAnswer(subject[2].points)
-        }else {  
+            disableButton(d3)
+        } else if (Q3 != `${subject[2].correctAnswer}`) {
+            incorrect(d3)
+        } else {  
             }  
     })
     d4.addEventListener('click', () => {
@@ -399,7 +454,10 @@ sportsOlympics = () => {
         ${subject[3].answers}`)
         if (Q4 === `${subject[3].correctAnswer}`) {
             correctAnswer(subject[3].points)
-        }else {  
+            disableButton(d4)
+        } else if (Q4 != `${subject[3].correctAnswer}`) {
+            incorrect(d4)
+        } else {  
             }  
     })
     d5.addEventListener('click', () => {
@@ -408,7 +466,10 @@ sportsOlympics = () => {
         ${subject[4].answers}`)
         if (Q5 === `${subject[4].correctAnswer}`) {
             correctAnswer(subject[4].points)
-        }else {  
+            disableButton(d5)
+        } else if (Q5 != `${subject[4].correctAnswer}`) {
+            incorrect(d5)
+        } else {  
             }  
     })
 }
@@ -422,7 +483,10 @@ sportsAlmost = () => {
         ${subject[0].answers}`)
         if (Q1 === `${subject[0].correctAnswer}`) {
             correctAnswer(subject[0].points)
-        }else {}  
+            disableButton(e1)
+        } else if (Q1 != `${subject[0].correctAnswer}`) {
+            incorrect(e1)
+        } else {}  
     })
     e2.addEventListener('click', () => {
        let Q2 = prompt(`${subject[1].question} 
@@ -430,7 +494,10 @@ sportsAlmost = () => {
         ${subject[1].answers}`)
         if (Q2 === `${subject[1].correctAnswer}`) {
             correctAnswer(subject[1].points)
-        }else {  
+            disableButton(e2)
+        } else if (Q2 != `${subject[1].correctAnswer}`) {
+            incorrect(e2)
+        } else {  
             }  
     })
     e3.addEventListener('click', () => {
@@ -439,7 +506,10 @@ sportsAlmost = () => {
         ${subject[2].answers}`)
         if (Q3 === `${subject[2].correctAnswer}`) {
             correctAnswer(subject[2].points)
-        }else {  
+            disableButton(e3)
+        } else if (Q3 != `${subject[2].correctAnswer}`) {
+            incorrect(e3)
+        } else {  
             }  
     })
     e4.addEventListener('click', () => {
@@ -448,7 +518,10 @@ sportsAlmost = () => {
         ${subject[3].answers}`)
         if (Q4 === `${subject[3].correctAnswer}`) {
             correctAnswer(subject[3].points)
-        }else {  
+            disableButton(e4)
+        } else if (Q4 != `${subject[3].correctAnswer}`) {
+            incorrect(e4)
+        } else {  
             }  
     })
     e5.addEventListener('click', () => {
@@ -457,7 +530,10 @@ sportsAlmost = () => {
         ${subject[4].answers}`)
         if (Q5 === `${subject[4].correctAnswer}`) {
             correctAnswer(subject[4].points)
-        }else {  
+            disableButton(e5)
+        } else if (Q5 != `${subject[4].correctAnswer}`) {
+            incorrect(e5)
+        } else {  
             }  
     })
 }
@@ -465,6 +541,16 @@ sportsAlmost = () => {
  correctAnswer = (x) => {
     score = score + x;
     scoreBoard.innerHTML = score
+}
+disableButton = (y) => {
+    y.style.background = 'green'
+    y.style.opacity = 0.5;
+    y.disabled = 'true'
+}
+incorrect = (z) => {
+    z.style.background = 'red'
+    z.style.opacity = 0.5
+    z.disabled = 'true'
 }
 // correctAnswer200 = () => {
 //     score = score + 200
