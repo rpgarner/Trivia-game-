@@ -73,29 +73,29 @@ let football = [{
 }]
 let baseball = [{
     'points': 100, 
-    'question1': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question1': 'How many teams are in the MLB', 
+    'correctAnswer': 'c',
+    'answers': [' a: 24', ' b: 36',' c: 30',' d: 28']
 },{
     'points': 200, 
-    'question2': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question2': 'Who won the World Series in 2021', 
+    'correctAnswer': 'a',
+    'answers': [' a: Atlanta Braves', ' b: Los Angelas Dodgers',' c: Boston Red Socks',' d: Houston Astros']
 },{
     'points': 300, 
-    'question3': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question3': 'How many Games are in a MLB season?', 
+    'correctAnswer': 'b',
+    'answers': [' a: 92', ' b: 162',' c: 100',' d: 142']
 },{
     'points': 400, 
-    'question4': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question4': 'Barry Bonds has the record for the most Home Runs in a season, how many did he hit?', 
+    'correctAnswer': 'b',
+    'answers': [' a: 66', ' b: 73',' c: 71',' d: 78']
 },{
     'points': 500, 
-    'question5': 'banana', 
-    'correctAnswer': 'Apple',
-    'answers': ['Apple', 'b','c','d']
+    'question5': 'In baseball what is another name for a walk? ', 
+    'correctAnswer': 'b',
+    'answers': [' a: walk it out', ' b: base on balls',' c: take your base',' d: all balls']
 }]
 let sportHistory = [{
     'points': 100, 
