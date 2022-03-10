@@ -1,6 +1,6 @@
 # Trivia-game-
  
- ! [trivial Game]Screen Shot 2022-03-08 at 8.03.46 AM.png
+ ! [trivial Game](https://media.istockphoto.com/photos/trivia-picture-id835649938?k=20&m=835649938&s=612x612&w=0&h=FQceQIrjNozRGuFPHUApCVG_NIKXSo6wslbz-b96LjM=)
 ## Overview
 
 Trivia game is a fun game of trivial questions. With multiple categories having 5 sections, each section with 5 questions. Each questions is associated with the amount of points a question is worth. Answer the question correctly and be reward with the points. The more points a questions is worth the harder the question is. There is a total of $7,500 points possible, test your knowledge on these topics and see how high of score you can get.  
@@ -32,5 +32,15 @@ and... Good luck!!!
 - The game is over when all the questions have been picked 
 - You need atleast $5000 to win the game. 
 
-##Project build plan 
+# Play Here
+    https://subdued-level.surge.sh
+
+
+### Project build plan 
 See attached Trello board of the project plan https://trello.com/b/SMoaZu3g/game-board-project
+
+#### sources
+-   https://stackoverflow.com/
+-   https://www.usefultrivia.com/sports_trivia/
+-   https://www.w3schools.com/css/css3_buttons.asp
+-   https://www.istockphoto.com/photos/trivia-game

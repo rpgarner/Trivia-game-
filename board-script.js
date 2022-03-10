@@ -178,12 +178,12 @@ let almost = [{
 }]
 
 //click events
-alert('please select a category')
+// alert('please select a category')
  categoryButton.addEventListener('click', () => {
      let categories = 'sports, history, music, movies!';
-     let cat = alert('We are currently creating more categories, for now please put in sports')
+     alert('We are currently creating more categories, for now please put in sports')
      prompt(`Please enter in a category: ${categories}`);
-     if (cat === 'sports') {
+     if ('sports') {
         subA.innerHTML = sports[0]
         subB.innerHTML = sports[1]
         subC.innerHTML = sports[2]
@@ -195,20 +195,20 @@ alert('please select a category')
         sportsOlympics()
         sportsAlmost()
      }
-    else if (cat === 'history') {
+    else if ('history') {
         subA.innerHTML = history[0]
         subB.innerHTML = history[1]
         subC.innerHTML = history[2]
         subD.innerHTML = history[3]
         subE.innerHTML = history[4]
      } 
-     else if (cat === 'music') {
+     else if ('music') {
         subA.innerHTML = music[0]
         subB.innerHTML = music[1]
         subC.innerHTML = music[2]
         subD.innerHTML = music[3]
         subE.innerHTML = music[4]
-     } else if (cat === 'movies') {
+     } else if ('movies') {
         subA.innerHTML = movies[0]
         subB.innerHTML = movies[1]
         subC.innerHTML = movies[2]
@@ -563,7 +563,28 @@ incorrect = (z) => {
 playAgain.addEventListener('click', () => {
     window.location.reload();
 })
-
+// window.onload = () => {
+//     gameTimer.innerHTML = 600 
+//     setInterval(function(){ 
+//         gameTimer.innerHTML -= .1; 
+//         if (gamerTimer.innerHTML === 0) {
+//             incorrect (questionSelect)
+//             alert('Game Over')
+//         }
+//     })
+// }
+// gameTimer = () => {
+//     document.querySelector('.timer').innerHTML = --value
+// }
+// var timerInterval = null;
+// function start() {
+//   stop(); 
+//   value = 0;
+//   timerInterval = setInterval(changeValue, 1000);  
+// }
+// var stop = function() {
+//   clearInterval(timerInterval);
+// }
 
 
 // let football = [{
