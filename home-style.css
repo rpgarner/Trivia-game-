@@ -5,6 +5,9 @@ body {
 header {
     text-align: center;
 }
+h1 {
+    font-size: 60px;
+}
 .navBar {
     list-style: none;
     background-color: rgb(27, 80, 179);
@@ -41,5 +44,4 @@ li {
    margin: 30px 90px;
    padding: 5px;
    border-bottom: 1px solid white;
-  
 } 

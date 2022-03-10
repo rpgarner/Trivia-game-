@@ -6,6 +6,7 @@ let subD = document.querySelector('.category4')
 let subE = document.querySelector('.category5')
 let categoryButton = document.querySelector('.categoryButton')
 let questionSelect = document.querySelector('.gameButton')
+let playAgain = document.querySelector('.playAgain')
     // first column buttons
     let a1 = document.querySelector('.a-1')
     let a2 = document.querySelector('.a-2')
@@ -43,7 +44,7 @@ let answerPrompt = 'Enter in either a,b,c,or d:'
 // subjects and questions
 let sports = ['football','baseball','history','olympics','almost']
 let history = ['american','computer science', 'culture', 'who', 'when']
-let music = ["1990's",'rock n roll', 'ancient', 'nursery rymes', 'randon']
+let music = ["1990's",'rock n roll', 'ancient', 'nursery', 'randon']
 let movies = ['action','musicals', 'history', 'banana', 'egg']
 let football = [{
     'points': 100, 
@@ -177,10 +178,12 @@ let almost = [{
 }]
 
 //click events
+alert('please select a category')
  categoryButton.addEventListener('click', () => {
      let categories = 'sports, history, music, movies!';
+     let cat = alert('We are currently creating more categories, for now please put in sports')
      prompt(`Please enter in a category: ${categories}`);
-     if ('sports') {
+     if (cat === 'sports') {
         subA.innerHTML = sports[0]
         subB.innerHTML = sports[1]
         subC.innerHTML = sports[2]
@@ -192,20 +195,20 @@ let almost = [{
         sportsOlympics()
         sportsAlmost()
      }
-    else if ('history') {
+    else if (cat === 'history') {
         subA.innerHTML = history[0]
         subB.innerHTML = history[1]
         subC.innerHTML = history[2]
         subD.innerHTML = history[3]
         subE.innerHTML = history[4]
      } 
-     else if ('music') {
+     else if (cat === 'music') {
         subA.innerHTML = music[0]
         subB.innerHTML = music[1]
         subC.innerHTML = music[2]
         subD.innerHTML = music[3]
         subE.innerHTML = music[4]
-     } else if ('movies') {
+     } else if (cat === 'movies') {
         subA.innerHTML = movies[0]
         subB.innerHTML = movies[1]
         subC.innerHTML = movies[2]
@@ -557,23 +560,11 @@ incorrect = (z) => {
     z.style.opacity = 0.5
     z.disabled = 'true'
 }
+playAgain.addEventListener('click', () => {
+    window.location.reload();
+})
 
-// correctAnswer200 = () => {
-//     score = score + 200
-//     scoreBoard.innerHTML = score
-// }
-// correctAnswer300 = () => {
-//     score = score + 300
-//     scoreBoard.innerHTML = score
-// }
-// correctAnswer400 = () => {
-//     score = score + 400
-//     scoreBoard.innerHTML = score
-// }
-// correctAnswer500 = () => {
-//     score = score + 500
-//     scoreBoard.innerHTML = score
-// }
+
 
 // let football = [{
 //     'points': 100, 

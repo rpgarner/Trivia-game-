@@ -91,4 +91,12 @@ li {
     transform: translateY(4px);
     opacity: 0.5;
   }
-  
+  .playAgain {
+    background-color:rgb(27, 80, 179) ;
+    color: white;
+    font-size: x-large;
+}
+footer {
+    text-align: center;
+    margin: 10px;
+}
