@@ -1,6 +1,6 @@
 # Trivia-game-
  
- ! [trivial Game](https://media.istockphoto.com/photos/trivia-picture-id835649938?k=20&m=835649938&s=612x612&w=0&h=FQceQIrjNozRGuFPHUApCVG_NIKXSo6wslbz-b96LjM=)
+ ![trivial Game](https://media.istockphoto.com/photos/trivia-picture-id835649938?k=20&m=835649938&s=612x612&w=0&h=FQceQIrjNozRGuFPHUApCVG_NIKXSo6wslbz-b96LjM=)
 ## Overview
 
 Trivia game is a fun game of trivial questions. With multiple categories having 5 sections, each section with 5 questions. Each questions is associated with the amount of points a question is worth. Answer the question correctly and be reward with the points. The more points a questions is worth the harder the question is. There is a total of $7,500 points possible, test your knowledge on these topics and see how high of score you can get.  
