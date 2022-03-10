@@ -1,129 +1,149 @@
-//query selects
-let subA = document.querySelector('.category1')
-let subB = document.querySelector('.category2')
-let subC = document.querySelector('.category3')
-let subD = document.querySelector('.category4')
-let subE = document.querySelector('.category5')
-let categoryButton = document.querySelector('.categoryButton')
-let questionSelect = document.querySelector('.gameButton')
-let playAgain = document.querySelector('.playAgain')
-    // first column buttons
-    let a1 = document.querySelector('.a-1')
-    let a2 = document.querySelector('.a-2')
-    let a3 = document.querySelector('.a-3')
-    let a4 = document.querySelector('.a-4')
-    let a5 = document.querySelector('.a-5')
-    //second column buttons
-    let b1 = document.querySelector('.b-1')
-    let b2 = document.querySelector('.b-2')
-    let b3 = document.querySelector('.b-3')
-    let b4 = document.querySelector('.b-4')
-    let b5 = document.querySelector('.b-5')
-    //third column buttons 
-    let c1 = document.querySelector('.c-1')
-    let c2 = document.querySelector('.c-2')
-    let c3 = document.querySelector('.c-3')
-    let c4 = document.querySelector('.c-4')
-    let c5 = document.querySelector('.c-5')
-    //fourth column buttons
-    let d1 = document.querySelector('.d-1')
-    let d2 = document.querySelector('.d-2')
-    let d3 = document.querySelector('.d-3')
-    let d4 = document.querySelector('.d-4')
-    let d5 = document.querySelector('.d-5') 
-    //fifth column buttons
-    let e1 = document.querySelector('.e-1')
-    let e2 = document.querySelector('.e-2')
-    let e3 = document.querySelector('.e-3')
-    let e4 = document.querySelector('.e-4')
-    let e5 = document.querySelector('.e-5')
-// universal variables
-let scoreBoard = document.querySelector('.score')
-let score = 0
-let answerPrompt = 'Enter in either a,b,c,or d:'
-// subjects and questions
-let sports = ['football','baseball','history','olympics','almost']
-let history = ['american','computer science', 'culture', 'who', 'when']
-let music = ["1990's",'rock n roll', 'ancient', 'nursery', 'randon']
-let movies = ['action','musicals', 'history', 'banana', 'egg']
-let football = [{
-    'points': 100, 
-    'question': 'In the NFL, the championship game is called what?', 
-    'correctAnswer': 'c',
-    'answers': [' a: world cup',' b: NFL championship',' c: super bowl',' d: rose bowl']
-},{
-    'points': 200, 
-    'question': 'Payton Manning missed all of the 2011 season, due to an injury to what body part?', 
-    'correctAnswer': 'a',
-    'answers': [' a: neck', ' b: knee',' c: foot',' d: back']
-},{
-    'points': 300, 
-    'question': 'The New Your Jets original team name was what ', 
-    'correctAnswer': 'b',
-    'answers': [' a: Pioneers', ' b: Titans',' c: Iron boys',' d: Colts']
-},{
-    'points': 400, 
-    'question': 'The triple crown is awarded to a player who had the most yards, touchdowns, receptions. Who was the last player to be reward the Triple crown?', 
-    'correctAnswer': 'b',
-    'answers': ['a: Randy Moss', 'b: Cooper Kupp','c: Jerry Rice','d: Antonio Brown']
-},{
-    'points': 500, 
-    'question': 'What team was established in 1898 and was the first team to join the NFL?', 
-    'correctAnswer': 'd',
-    'answers': [' a: Pittsburgh Steelers', ' b: Greenbay Packers',' c: Chicago Bears',' d: Arizona Cardinals']
-}]
-let baseball = [{
-    'points': 100, 
-    'question': 'How many teams are in the MLB', 
-    'correctAnswer': 'c',
-    'answers': [' a: 24', ' b: 36',' c: 30',' d: 28']
-},{
-    'points': 200, 
-    'question': 'Who won the World Series in 2021', 
-    'correctAnswer': 'a',
-    'answers': [' a: Atlanta Braves', ' b: Los Angelas Dodgers',' c: Boston Red Socks',' d: Houston Astros']
-},{
-    'points': 300, 
-    'question': 'How many Games are in a MLB season?', 
-    'correctAnswer': 'b',
-    'answers': [' a: 92', ' b: 162',' c: 100',' d: 142']
-},{
-    'points': 400, 
-    'question': 'Barry Bonds has the record for the most Home Runs in a season, how many did he hit?', 
-    'correctAnswer': 'b',
-    'answers': [' a: 66', ' b: 73',' c: 71',' d: 78']
-},{
-    'points': 500, 
-    'question': 'In baseball what is another name for a walk? ', 
-    'correctAnswer': 'b',
-    'answers': [' a: walk it out', ' b: base on balls',' c: take your base',' d: all balls']
-}]
-let sportHistory = [{
-    'points': 100, 
-    'question': 'Which sport was the only sport played on the Moon', 
-    'correctAnswer': 'b',
-    'answers': [' a: soccer', ' b: Golf',' c: football',' d: baseball']
-},{
-    'points': 200, 
-    'question': 'How old was Tiger Woods when he won his first Masters', 
-    'correctAnswer': 'a',
-    'answers': [' a: 21', ' b: 19',' c: 23','d: 33']
-},{
-    'points': 300, 
-    'question': 'There has been how many tour de Frances?', 
-    'correctAnswer': 'd',
-    'answers': [' a: 72', ' b: 87',' c: 132 ',' d: 108']
-},{
-    'points': 400, 
-    'question': 'Micheal Jordan and the Chicago went on a incredible championship run, how many did they win ', 
-    'correctAnswer': 'c',
-    'answers': ['a: 3', ' b: 4 ',' c: 6 ',' d: 9']
-},{
-    'points': 500, 
-    'question': 'In 2021 who was the highest paid athlete', 
-    'correctAnswer': 'd',
-    'answers': [' a: Lebron James', ' b: Patrick Mahomes',' c: Christiano Ronaldo',' d: Connor Mcgregor']
-}]
+//varibles, 
+    //universal variables,
+    let scoreBoard = document.querySelector('.score');
+    let score = 0
+    let answerPrompt = 'Enter in either a,b,c,or d:';
+    let subA = document.querySelector('.category1');
+    let subB = document.querySelector('.category2');
+    let subC = document.querySelector('.category3');
+    let subD = document.querySelector('.category4');
+    let subE = document.querySelector('.category5');
+    let categoryButton = document.querySelector('.categoryButton');
+    let questionSelect = document.querySelector('.gameButton');
+    let playAgain = document.querySelector('.playAgain');
+     // first column buttons,
+    let a1 = document.querySelector('.a-1');
+    let a2 = document.querySelector('.a-2');
+    let a3 = document.querySelector('.a-3');
+    let a4 = document.querySelector('.a-4');
+    let a5 = document.querySelector('.a-5');
+    //second column buttons,
+    let b1 = document.querySelector('.b-1');
+    let b2 = document.querySelector('.b-2');
+    let b3 = document.querySelector('.b-3');
+    let b4 = document.querySelector('.b-4');
+    let b5 = document.querySelector('.b-5');
+    //third column buttons,
+    let c1 = document.querySelector('.c-1');
+    let c2 = document.querySelector('.c-2');
+    let c3 = document.querySelector('.c-3');
+    let c4 = document.querySelector('.c-4');
+    let c5 = document.querySelector('.c-5');
+    //fourth column buttons,
+    let d1 = document.querySelector('.d-1');
+    let d2 = document.querySelector('.d-2');
+    let d3 = document.querySelector('.d-3');
+    let d4 = document.querySelector('.d-4');
+    let d5 = document.querySelector('.d-5');
+    //fifth column buttons,
+    let e1 = document.querySelector('.e-1');
+    let e2 = document.querySelector('.e-2');
+    let e3 = document.querySelector('.e-3');
+    let e4 = document.querySelector('.e-4');
+    let e5 = document.querySelector('.e-5');
+// categories, subjects, and questions
+    let sports = ['football','baseball','history','olympics','almost']
+    let history = ['american','computer science', 'culture', 'who', 'when']
+    let music = ["1990's",'rock n roll', 'ancient', 'nursery', 'randon']
+    let movies = ['action','musicals', 'history', 'banana', 'egg']
+// subjects for sports, this is an array of objects
+    let football = [
+    //question 1
+        {'points': 100, 
+        'question': 'In the NFL, the championship game is called what?', 
+        'correctAnswer': 'c',
+        'answers': [' a: world cup',' b: NFL championship',' c: super bowl',' d: rose bowl']
+        },
+    //question 2
+        {'points': 200, 
+        'question': 'Payton Manning missed all of the 2011 season, due to an injury to what body part?', 
+        'correctAnswer': 'a',
+        'answers': [' a: neck', ' b: knee',' c: foot',' d: back']
+        },
+    //question 3
+        {'points': 300, 
+        'question': 'The New Your Jets original team name was what ', 
+        'correctAnswer': 'b',
+        'answers': [' a: Pioneers', ' b: Titans',' c: Iron boys',' d: Colts']
+        },
+    //question 4
+        {'points': 400, 
+        'question': 'The triple crown is awarded to a player who had the most yards, touchdowns, receptions. Who was the last player to be reward the Triple crown?', 
+        'correctAnswer': 'b',
+        'answers': ['a: Randy Moss', 'b: Cooper Kupp','c: Jerry Rice','d: Antonio Brown']
+        },
+    // question 5 
+        {'points': 500, 
+        'question': 'What team was established in 1898 and was the first team to join the NFL?', 
+        'correctAnswer': 'd',
+        'answers': [' a: Pittsburgh Steelers', ' b: Greenbay Packers',' c: Chicago Bears',' d: Arizona Cardinals']
+        }];
+let baseball = [
+        {'points': 100, 
+        'question': 'How many teams are in the MLB', 
+        'correctAnswer': 'c',
+        'answers': [' a: 24', ' b: 36',' c: 30',' d: 28']
+        },
+    //question 1
+        {'points': 200, 
+        'question': 'Who won the World Series in 2021', 
+        'correctAnswer': 'a',
+        'answers': [' a: Atlanta Braves', ' b: Los Angelas Dodgers',' c: Boston Red Socks',' d: Houston Astros']
+        },
+    //question 2
+        {'points': 300, 
+        'question': 'How many Games are in a MLB season?', 
+        'correctAnswer': 'b',
+        'answers': [' a: 92', ' b: 162',' c: 100',' d: 142']
+        },
+    //question 3
+        {'points': 400, 
+        'question': 'Barry Bonds has the record for the most Home Runs in a season, how many did he hit?', 
+        'correctAnswer': 'b',
+        'answers': [' a: 66', ' b: 73',' c: 71',' d: 78']
+        },
+    //question 4
+        {'points': 500, 
+        'question': 'In baseball what is another name for a walk? ', 
+        'correctAnswer': 'b',
+        'answers': [' a: walk it out', ' b: base on balls',' c: take your base',' d: all balls']
+        }]
+let sportHistory = [
+    //question 1
+        {
+        'points': 100, 
+        'question': 'Which sport was the only sport played on the Moon', 
+        'correctAnswer': 'b',
+        'answers': [' a: soccer', ' b: Golf',' c: football',' d: baseball']
+        },
+    //question 2
+        {
+        'points': 200, 
+        'question': 'How old was Tiger Woods when he won his first Masters', 
+        'correctAnswer': 'a',
+        'answers': [' a: 21', ' b: 19',' c: 23','d: 33']
+        },
+    //question 3
+        {
+        'points': 300, 
+        'question': 'There has been how many tour de Frances?', 
+        'correctAnswer': 'd',
+        'answers': [' a: 72', ' b: 87',' c: 132 ',' d: 108']
+        },
+    //question 4
+        {
+        'points': 400, 
+        'question': 'Micheal Jordan and the Chicago went on a incredible championship run, how many did they win ', 
+        'correctAnswer': 'c',
+        'answers': ['a: 3', ' b: 4 ',' c: 6 ',' d: 9']
+        },
+    //question 5
+        {
+        'points': 500, 
+        'question': 'In 2021 who was the highest paid athlete', 
+        'correctAnswer': 'd',
+        'answers': [' a: Lebron James', ' b: Patrick Mahomes',' c: Christiano Ronaldo',' d: Connor Mcgregor']
+        }]
 let olympics = [{
     'points': 100, 
     'question': 'Which athlete won 8 gold medals in the 2008 summer olymipics?', 
@@ -136,9 +156,9 @@ let olympics = [{
     'answers': [' a: 2000', ' b: 1998','c: 1990','d: 2003']
 },{
     'points': 300, 
-    'question': '', 
-    'correctAnswer': 'Apple',
-    'answers': ['A', 'b','c','d']
+    'question': 'What year did China whin its first Olympic Medal', 
+    'correctAnswer': 'b',
+    'answers': [' a: 1842', ' b: 1984',' c: 2001',' d: 1901']
 },{
     'points': 400, 
     'question': 'What country that competed, went through the longest drought of winning a gold medal?', 
@@ -172,56 +192,57 @@ let almost = [{
     'answers': [' a: North Illinois', ' b: UCLA',' c: mississippi state',' d. northwestern']
 },{
     'points': 500, 
-    'question': ' ', 
+    'question': ' What NFL player returned a funble 66 yards into the wrong endzone?', 
     'correctAnswer': 'd',
-    'answers': ['a', 'b','c','d']
+    'answers': [' a: Deion Sanders', ' b: Trent Williams',' c: Von Miller',' d: Jim Marshall']
 }]
 
-//click events
-// alert('please select a category')
- categoryButton.addEventListener('click', () => {
-     let categories = 'sports, history, music, movies!';
-     alert('We are currently creating more categories, for now please put in sports')
-     prompt(`Please enter in a category: ${categories}`);
-     if ('sports') {
-        subA.innerHTML = sports[0]
-        subB.innerHTML = sports[1]
-        subC.innerHTML = sports[2]
-        subD.innerHTML = sports[3]
-        subE.innerHTML = sports[4]
-        sportsFootball()
-        sportsBaseball()
-        sportsHistory()
-        sportsOlympics()
-        sportsAlmost()
-     }
-    else if ('history') {
-        subA.innerHTML = history[0]
-        subB.innerHTML = history[1]
-        subC.innerHTML = history[2]
-        subD.innerHTML = history[3]
-        subE.innerHTML = history[4]
-     } 
-     else if ('music') {
-        subA.innerHTML = music[0]
-        subB.innerHTML = music[1]
-        subC.innerHTML = music[2]
-        subD.innerHTML = music[3]
-        subE.innerHTML = music[4]
-     } else if ('movies') {
-        subA.innerHTML = movies[0]
-        subB.innerHTML = movies[1]
-        subC.innerHTML = movies[2]
-        subD.innerHTML = movies[3]
-        subE.innerHTML = movies[4]
-     } 
- })
+//functions and click events
+    //selecting a category and filling in questions 
+       //what happens when you click the category button
+        categoryButton.addEventListener('click', () => {
+            let categories = 'sports, history, music, movies!';
+                alert('We are currently creating more categories, for now please put in sports')
+                prompt(`Please enter in a category: ${categories}`);
+             //connecting selected category to each subject   
+                //loading questions to subject sports
+                if ('sports') {
+                    subA.innerHTML = sports[0]
+                    subB.innerHTML = sports[1]
+                    subC.innerHTML = sports[2]
+                    subD.innerHTML = sports[3]
+                    subE.innerHTML = sports[4]
+                    // Here are the methods for questions under each subject
+                        sportsFootball()
+                        sportsBaseball()
+                        sportsHistory()
+                        sportsOlympics()
+                        sportsAlmost()
+                // loading questions to subject history
+                } else if ('history') {
+                    subA.innerHTML = history[0]
+                    subB.innerHTML = history[1]
+                    subC.innerHTML = history[2]
+                    subD.innerHTML = history[3]
+                    subE.innerHTML = history[4]
+                // loading questions to subject music
+                } else if ('music') {
+                    subA.innerHTML = music[0]
+                    subB.innerHTML = music[1]
+                    subC.innerHTML = music[2]
+                    subD.innerHTML = music[3]
+                    subE.innerHTML = music[4]
+                // loading questions to subject movies
+                } else if ('movies') {
+                    subA.innerHTML = movies[0]
+                    subB.innerHTML = movies[1]
+                    subC.innerHTML = movies[2]
+                    subD.innerHTML = movies[3]
+                    subE.innerHTML = movies[4]
+                } 
+        })
 
-
-
-
-//function for cat sports, subject football
-
+// function/method for subject football
 sportsFootball = () => {
     let subject = football
     a1.addEventListener('click', () => {
@@ -285,7 +306,7 @@ sportsFootball = () => {
             }  
     })
 }
-//  function for cat sports, subject baseball
+//  function for subject baseball
 sportsBaseball = () => {
     let subject = baseball
     b1.addEventListener('click', () => {
@@ -348,8 +369,7 @@ sportsBaseball = () => {
             }  
     })
 }
-
-// function for cat sports, subject sport history 
+// function for subject sport history 
 sportsHistory = () => {
     let subject = sportHistory
     c1.addEventListener('click', () => {
@@ -412,8 +432,7 @@ sportsHistory = () => {
             }  
     })
 }
-
-//  functions for cat sports, subject olympics
+// function for subject olympics
 sportsOlympics = () => {
     let subject = olympics
     d1.addEventListener('click', () => {
@@ -476,8 +495,7 @@ sportsOlympics = () => {
             }  
     })
 }
-
-//function for cat sports, subject almost
+//function for subject almost
 sportsAlmost = () => {
     let subject = almost
     e1.addEventListener('click', () => {
@@ -541,6 +559,7 @@ sportsAlmost = () => {
     })
 }
 // function to change score board
+    //if answer is correct
  correctAnswer = (x) => {
     score = score + x;
     scoreBoard.innerHTML = score
@@ -550,170 +569,19 @@ sportsAlmost = () => {
         alert('you are a trivia master')
     }
 }
+    //disableing a button
 disableButton = (y) => {
     y.style.background = 'green'
     y.style.opacity = 0.5;
     y.disabled = 'true'
 }
+    //incorrect answer
 incorrect = (z) => {
     z.style.background = 'red'
     z.style.opacity = 0.5
     z.disabled = 'true'
 }
+//function play again 
 playAgain.addEventListener('click', () => {
     window.location.reload();
 })
-// window.onload = () => {
-//     gameTimer.innerHTML = 600 
-//     setInterval(function(){ 
-//         gameTimer.innerHTML -= .1; 
-//         if (gamerTimer.innerHTML === 0) {
-//             incorrect (questionSelect)
-//             alert('Game Over')
-//         }
-//     })
-// }
-// gameTimer = () => {
-//     document.querySelector('.timer').innerHTML = --value
-// }
-// var timerInterval = null;
-// function start() {
-//   stop(); 
-//   value = 0;
-//   timerInterval = setInterval(changeValue, 1000);  
-// }
-// var stop = function() {
-//   clearInterval(timerInterval);
-// }
-
-
-// let football = [{
-//     'points': 100, 
-//     'question': 'In the NFL, the championship game is called what?', 
-//     'correctAnswer': 'c',
-//     'answers': [' a: world cup',' b: NFL championship',' c: super bowl',' d: rose bowl']
-// },{
-//     'points': 200, 
-//     'question': 'Payton Manning missed all of the 2011 season, due to an injury to what body part?', 
-//     'correctAnswer': 'a',
-//     'answers': [' a: neck', ' b: knee',' c: foot',' d: back']
-// },{
-//     'points': 300, 
-//     'question': 'what NFL team went to 4 superbowls in a row, but did not win a single one', 
-//     'correctAnswer': 'b',
-//     'answers': [' a: Dallas Cowboys', ' b: Buffalo Bills',' c: San Francisco',' d: Washington Redskins']
-// },{
-//     'points': 400, 
-//     'question': 'The triple crown is awarded to a player who had the most yards, touchdowns, receptions. Who was the last player to be reward the Triple crown?', 
-//     'correctAnswer': 'b',
-//     'answers': ['a: Randy Moss', 'b: Cooper Kupp','c: Jerry Rice','d: Antonio Brown']
-// },{
-//     'points': 500, 
-//     'question': 'What team was established in 1898 and was the first team to join the NFL?', 
-//     'correctAnswer': 'd',
-//     'answers': [' a: Pittsburgh Steelers', ' b: Greenbay Packers',' c: Chicago Bears',' d: Arizona Cardinals']
-// }]
-// let baseball = [{
-//     'points': 100, 
-//     'question1': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 200, 
-//     'question2': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 300, 
-//     'question3': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 400, 
-//     'question4': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 500, 
-//     'question5': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// }]
-// let sportHistory = [{
-//     'points': 100, 
-//     'question1': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 200, 
-//     'question2': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 300, 
-//     'question3': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 400, 
-//     'question4': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 500, 
-//     'question5': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// }]
-// let olympics = [{
-//     'points': 100, 
-//     'question1': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 200, 
-//     'question2': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 300, 
-//     'question3': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 400, 
-//     'question4': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 500, 
-//     'question5': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// }]
-// let losers = [{
-//     'points': 100, 
-//     'question1': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 200, 
-//     'question2': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 300, 
-//     'question3': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 400, 
-//     'question4': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// },{
-//     'points': 500, 
-//     'question5': 'banana', 
-//     'correctAnswer': 'Apple',
-//     'answers': ['Apple', 'b','c','d']
-// }]
