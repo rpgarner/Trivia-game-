@@ -16,21 +16,23 @@ Trivia game is a fun game of trivial questions. With multiple categories having 
 ## Rules single team or player
 
 - Play as one team or by your self
-- take turns choosing a topic category and questions ($100 - $500)
-- If the questions is answered correctly, you win the value of the question you picked.
-- If the questions answered incorrectly. Their turn is over and the question will go off the board. (corectly of incorrectly)
-- The game is over when all the questions have been picked
+- take turns choosing a category and questions ($100 - $500)
+- If the question is answered correctly, you win the value of the question you picked.
+- If the question is answered correctly or incorrectly. The question will go off the board. 
+- The game is over when all the questions have been picked.
 - You need atleast $5000 to win the game.
 - Become a Master and get all the questions correct!
 
 # Play Here
 
-- https://subdued-level.surge.sh
+- Click here: https://subdued-level.surge.sh
+  
   ![Lets Play](https://c8.alamy.com/comp/2CA40C8/lets-play-in-splashs-background-2CA40C8.jpg)
 
 ### Project build plan
 
 ![project building](https://thumbs.dreamstime.com/b/blueprint-793695.jpg)
+
 see how we built this game, in our attached Trello board https://trello.com/b/SMoaZu3g/game-board-project
 
 #### sources
