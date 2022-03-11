@@ -314,13 +314,11 @@ let almost = [
 //function for selecting category
 categoryButton.addEventListener("click", () => {
   let categories = "sports, history, music, movies!";
-  alert(
-    "We are currently creating more categories, for now please put in sports"
-  );
-  prompt(`Please enter in a category: ${categories}`);
+  alert("We are currently creating more categories, for now please put in sports");
+  let a = prompt(`Please enter in a category: ${categories}`);
   //connecting selected category to each subject
   //loading questions to subject sports
-  if ("sports") {
+  if (a === "sports") {
     subA.innerHTML = sports[0];
     subB.innerHTML = sports[1];
     subC.innerHTML = sports[2];
@@ -333,21 +331,21 @@ categoryButton.addEventListener("click", () => {
     sportsOlympics();
     sportsAlmost();
     // loading questions to subject history
-  } else if ("history") {
+  } else if (a === "history") {
     subA.innerHTML = history[0];
     subB.innerHTML = history[1];
     subC.innerHTML = history[2];
     subD.innerHTML = history[3];
     subE.innerHTML = history[4];
     // loading questions to subject music
-  } else if ("music") {
+  } else if (a === "music") {
     subA.innerHTML = music[0];
     subB.innerHTML = music[1];
     subC.innerHTML = music[2];
     subD.innerHTML = music[3];
     subE.innerHTML = music[4];
     // loading questions to subject movies
-  } else if ("movies") {
+  } else if (a === "movies") {
     subA.innerHTML = movies[0];
     subB.innerHTML = movies[1];
     subC.innerHTML = movies[2];
