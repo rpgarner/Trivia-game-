@@ -1,4 +1,4 @@
-# Trivial-game-
+# Trivial-game
  
  ![trivial Game](https://media.istockphoto.com/photos/trivia-picture-id835649938?k=20&m=835649938&s=612x612&w=0&h=FQceQIrjNozRGuFPHUApCVG_NIKXSo6wslbz-b96LjM=)
 ## Overview
