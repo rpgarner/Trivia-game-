@@ -58,3 +58,10 @@ see how we built this game, in our attached Trello board https://trello.com/b/SM
 #### More categories!
 
 - we are currently working on filling in the questions for three categories (history, music, and movies!)
+
+#### Make you own contributions
+  - Fork and Clone this repo
+  - Open the repo in VS Code with `code .`
+  - test out your changes `open index.html`
+  - save by `git add .`, `git commit -m ''`, and push to your fork `git push origin main`
+  - make a pull request and share your additions
