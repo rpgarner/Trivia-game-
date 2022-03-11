@@ -43,8 +43,8 @@ let e4 = document.querySelector(".e-4");
 let e5 = document.querySelector(".e-5");
 // categories, subjects, and questions
 let sports = ["football", "baseball", "history", "olympics", "almost"];
-let history = ["american", "computer science", "culture", "who", "when"];
-let music = ["1990's", "rock n roll", "ancient", "nursery", "randon"];
+let history = ["american", "science", "culture", "who", "when"];
+let music = ["1990's", "rock n roll", "ancient", "nursery", "random"];
 let movies = ["action", "musicals", "history", "banana", "egg"];
 // subjects for sports, this is an array of objects
 let football = [
