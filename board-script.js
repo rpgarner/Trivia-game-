@@ -682,9 +682,9 @@ correctAnswer = (x) => {
   score = score + x;
   scoreBoard.innerHTML = score;
   if (score >= 5000) {
-    alert("You Win! you are one smart cookie.");
+    alert("You Win! you are one smart cookie. Play again or continue playing to see if you can become a master and get all the question correct");
   } else if (score === 7500) {
-    alert("you are a trivia master");
+    alert("Now you are the Master");
   }
 };
 //disableing a button

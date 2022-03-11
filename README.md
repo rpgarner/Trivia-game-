@@ -7,7 +7,7 @@ Trivia game is a fun game of trivial questions. With multiple categories having 
 
 ## Getting Started
 
-- ![enter in the game](https://subdued-level.surge.sh/)
+- Go to the game: https://subdued-level.surge.sh/
 - read the rules.
 - select play to start the game.
 - Select a category.
@@ -16,9 +16,9 @@ Trivia game is a fun game of trivial questions. With multiple categories having 
 ## Rules single team or player
 
 - Play as one team or by your self
-- take turns choosing a topic category and a question in that category ($100 - $500)
+- take turns choosing a topic category and questions ($100 - $500)
 - If the questions is answered correctly, you win the value of the question you picked.
-- If the questions answered incorrect. Their turn is over and the question will go off the board. (corectly of incorrectly)
+- If the questions answered incorrectly. Their turn is over and the question will go off the board. (corectly of incorrectly)
 - The game is over when all the questions have been picked
 - You need atleast $5000 to win the game.
 - Become a Master and get all the questions correct!
